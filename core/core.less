@@ -1,0 +1,21 @@
+/*
+  Applies a reset to the default anchor styles
+  params @color   new anchor text color
+*/
+.ResetAnchors(@color) {
+    text-decoration : none;
+    color           : @color;
+}
+
+/*
+    Toggles between two display states based on screen size
+    @param base  The starting point to base the toggle off of
+    @param response  The desired display type
+    @param size  The screen size that we want the trigger to apply at
+*/
+.DisplayToggle(@base, @response, @size){
+  display: @base;
+  @media screen and (max-width: @size){
+    display: @response;
+  }
+}

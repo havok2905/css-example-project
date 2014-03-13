@@ -1,0 +1,21 @@
+/*
+  We are overwriting bootstrap rules so we should scope
+  this to the original class.
+*/
+
+table.table {
+  margin : 10px 0px 10px 0px;
+
+  /* We need tbody and tr to overwrite bootstrap. */
+  tbody tr {
+    td, th {
+      padding: 20px 0px 20px 0px;
+      text-align : center;
+    }
+  }
+
+  th {
+     color : @grey;
+     background-color : @light-grey;
+  }
+}

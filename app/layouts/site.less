@@ -1,0 +1,42 @@
+/*
+    1. HEADER
+    Contains a list of navigation links with heading element
+*/
+
+body, html {
+  font-family : @open-sans-font;
+}
+
+header.site-header {
+
+  background-color : @cloudspace-blue;
+  margin-bottom : 40px;
+  color : @white;
+
+  ul {
+    float : right;
+    position : relative;
+    top : 10px;
+    li {
+      display : inline;
+      line-height : auto;
+      a { .ResetAnchors( @white ); }
+    }
+  }
+}
+
+
+/*
+    1. Footer
+    Contains a message to take up space because I'm lazy
+*/
+
+footer.site-footer {
+  background-color : @cloudspace-blue;
+  p {
+    color : @white;
+    padding: 30px;
+    text-align : center;
+    line-height: auto;
+  }
+}
